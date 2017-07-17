@@ -1,0 +1,87 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/user_info_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/user_info_container"
+            android:minHeight="150dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:paddingTop="28dp">
+
+            <TextView
+                android:id="@+id/title"
+                fontPath="fonts/BalooBhaina-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/dialog_success_title"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                fontPath="fonts/Arvo-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Vladyslav Loboda"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/action_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/not_register"
+                    fontPath="fonts/Arvo-Regular.ttf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_red_rounded"
+                    android:paddingEnd="2dp"
+                    android:paddingStart="2dp"
+                    android:text="@string/not_register"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/force_register"
+                    fontPath="fonts/Arvo-Regular.ttf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_green_rounded"
+                    android:paddingEnd="2dp"
+                    android:paddingStart="2dp"
+                    android:text="@string/force_register"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_done"
+            app:backgroundTint="@color/colorDialogFabSuccess" />
+
+    </RelativeLayout>
+</layout>

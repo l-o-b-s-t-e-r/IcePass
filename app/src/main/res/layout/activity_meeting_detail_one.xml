@@ -1,0 +1,141 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                fontPath="fonts/DroidSerif-Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="IcePass"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/description"
+                    fontPath="fonts/Arvo-Regular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Description"
+                    android:textColor="@color/colorMeeting"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/visitors_count"
+                    fontPath="fonts/Arvo-Regular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/description"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/people_actual"
+                    android:textColor="@color/colorMeeting"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/card_title"
+                    fontPath="fonts/VarelaRound-Regular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/visitors_count"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/swipe_the_card"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/card" />
+
+                <View
+                    android:id="@+id/scan_line"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/card"
+                    android:layout_alignStart="@id/card"
+                    android:layout_alignTop="@id/card"
+                    android:background="@drawable/scan_line_shape"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/action_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btnJoinBySid"
+                        fontPath="fonts/Arvo-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_blue_rounded"
+                        android:text="@string/enter_sid"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/btnJoinByQrCode"
+                        fontPath="fonts/Arvo-Regular.ttf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_blue_rounded"
+                        android:text="@string/scan_qr_code"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/visitors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/action_buttons"
+                    android:layout_below="@+id/card"
+                    android:layout_margin="10dp" />
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</layout>

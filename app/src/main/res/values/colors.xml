@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#22346f</color>
+    <color name="colorPrimaryDark">#162047</color>
+    <color name="colorAccent">#3c74c7</color>
+    <color name="colorAccentAlpha">#CC3c74c7</color>
+    <color name="colorLoadMore">#bcbcbc</color>
+    <color name="colorMeeting">#464646</color>
+    <color name="colorSeparator">#dadada</color>
+    <color name="colorArticle">#5c5c5c</color>
+    <color name="colorDialogFabSuccess">#50b332</color>
+    <color name="colorDialogFabFail">#d12f2c</color>
+    <color name="colorCardLine">#d12f2c</color>
+    <color name="colorBtnBlue">#333c74c7</color>
+    <color name="colorBtnRed">#CCd12f2c</color>
+    <color name="colorBtnGreen">#CC50b332</color>
+    <color name="colorHint">#E6ffffff</color>
+    <color name="colorLogInPressed">#d0dbf2</color>
+    <color name="colorMeetingsBackground">#f5f5f5</color>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:id="@+id/meeting_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="10dp">  
+
+        <TextView
+            android:id="@+id/visitors_count"
+            fontPath="fonts/Arvo-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/title"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="@color/colorMeeting"
+            android:textSize="14sp" />  
+
+        <TextView
+            android:id="@+id/title"
+            fontPath="fonts/Arvo-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/visitors_count"
+            android:text="Meeting Title"
+            android:textColor="@color/colorMeeting"
+            android:textSize="14sp" />  
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

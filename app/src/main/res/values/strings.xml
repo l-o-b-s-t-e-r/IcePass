@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Viðburðaskráning</string>
+
+    <!-- LoginActivity -->
+    <string name="hint_username">Notandi</string>
+    <string name="hint_password">Lykilorð</string>
+    <string name="hint_device">Númer tækis</string>
+    <string name="log_in">Virkja tæki</string>
+    <string name="unregister">Afskrá tæki</string>
+    <string name="log_out">Útskráning</string>
+
+    <!-- MainActivity -->
+    <string name="tab_actual">Virkir</string>
+    <string name="tab_past">Eldri</string>
+    <string name="people_actual">mættir</string>
+    <string name="people_past">mættu</string>
+
+    <!-- DetailActivity -->
+    <string name="swipe_the_card">Skannaðu kort</string>
+    <string name="enter_sid">Skrá kennitölu</string>
+    <string name="scan_qr_code">Skanna QR kóða</string>
+
+    <!-- ResultDialog -->
+    <string name="dialog_success_title">Skráning tókst</string>
+    <string name="dialog_already_registered">Þegar skráður</string>
+    <string name="dialog_fail_title">Óvirkur félagsmaður</string>
+    <string name="force_register">Skrá á fund</string>
+    <string name="not_register">Ekki skrá</string>
+
+    <!-- EnterSidDialog -->
+    <string name="enter_sid_title">Kennitala félagsmanns</string>
+    <string name="enter_temp_id_title">Skrá númer tækis</string>
+    <string name="enter_sid_hint">Kennitala</string>
+    <string name="enter_sid_cancel">Hætta við</string>
+    <string name="enter_sid_join">Skrá</string>
+
+    <string name="transition_meeting_title">meeting_title</string>
+
+    <!-- Errors -->
+    <string name="error_internet">Það virðast vera vandamál með nettengingu, vinsamlegast athugaðu hvort tækið sé tengt á netið.</string>
+    <string name="error_meetings_loading">Ekki tókst að ná í lista yfir fundi</string>
+    <string name="error_meeting_loading">Ekki tókst að ná í upplýsingar um fundinn</string>
+    <string name="error_nfc_not_supported">NFC tæknin er ekki studd á þessu tæki</string>
+    <string name="error_nfc_not_enabled">Það þarf að virkja NFC samband á tækinu áður en hægt er að lesa kort</string>
+    <string name="error_failed_to_scan_card">Ekki tókst að lesa kortið</string>
+    <string name="error_visitor_not_registered">Ekki tókst að skrá korthafa á fundinn</string>
+    <string name="error_visitor_not_exist">Korthafi ekki skráður í félagið</string>
+    <string name="error_log_in">Invalid credentials</string>
+    <string name="error_register">Can not register device</string>
+    <string name="error_device_expired">Device expired</string>
+    <string name="error_device_not_registered">Device is not registered</string>
+    <string name="error_device_not_found">Device is not found</string>
+    <string name="title_activity_meeting_detail_one">MeetingDetailOneActivity</string>
+
+</resources>
